@@ -1,0 +1,109 @@
+/* ---- CSS Reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Gradiente principal ---- */
+
+.bg-gradient {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #0f172a, #111827, #1e293b);
+}
+
+/* ---- CustomJumbotron ---- */
+
+.jumbotron-container {
+  text-align: center;
+}
+
+.jumbotron-title {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: transparent;
+  font-size: 1.875rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.jumbotron-description {
+  color: #4b5563;
+  font-size: 1.125rem;
+  white-space: pre-line;
+}
+
+@media (min-width: 1024px) {
+  .jumbotron-title {
+    font-size: 3rem;
+  }
+}
+
+/* ---- Código principal ---- */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem;
+  background-color: #f4f7f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.title {
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input {
+  width: 80px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.operator, .equals {
+  font-size: 2rem;
+  color: #555;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sum {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+  min-width: 60px;
+  text-align: center;
+}
